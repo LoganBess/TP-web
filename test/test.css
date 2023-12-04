@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1.5px solid limegreen; */
+    font: inherit;
+    font-family: 'Itim', cursive;
+}
+
+
+/* Media */
+@media {
+
+}
+
+/* Body */
+body {
+    background-color: #669F8C;
+}
+
+
+/* Nav */
+.nav__text {
+    font-size: 1.5rem;
+}
+
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100rem;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+.box {
+    background-color: #E9D199;
+    border-radius: 0.5rem;
+}
+
+.row2 {
+    display: flex;
+    gap: 3rem;
+}
+
+.self {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 88rem;
+}
+
+.img-self-1 {
+    top: 3rem;
+    left: ;
+}
+
+.img-self-2 {
+    top: 3rem;
+    right: 5.9rem;
+}
+
+.row2 img {
+    
+    border-radius: 0.5rem;
+}
+
+section .text {
+    font-size: 1.8rem;
+}
+
+
+/* Footer */

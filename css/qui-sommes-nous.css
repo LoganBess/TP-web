@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1.5px solid limegreen; */
+    font: inherit;
+    font-family: 'Itim', cursive;
+}
+
+/* Body */
+body {
+    background-color: #669F8C;
+}
+
+
+/* Nav */
+.nav__text {
+    font-size: 1.5rem;
+}
+
+
+/* Section */
+section .col {
+    background-color: #E9D199;
+}
+
+section .text {
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
