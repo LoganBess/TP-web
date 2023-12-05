@@ -18,7 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     <!-- Css -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/accueil.css">
 
     <!-- Utility -->
     <meta charset="UTF-8">
@@ -43,15 +43,31 @@
                     <li><a class="dropdown-item" href="../pages/accueil.html">Mode dark</a></li>
                 </ul>
             </div>
+            
+            <!-- mobile version button-->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- mobile version links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item text-nav mx-2 nav-active">
+                        <a href="../pages/accueil.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item text-nav mx-2">
+                        <a href="../pages/histoire.html" class="nav-link">Histoire</a>
+                    </li>
+                    <li class="nav-item text-nav mx-2">
+                        <a href="../pages/preuves.html" class="nav-link">Preuves</a>
+                    </li>
+                    <li class="nav-item text-nav mx-2 me-0">
+                        <a href="../pages/propos.html" class="nav-link">À propos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-
-    <!-- Main -->
-    <main>
-        <div class="container-lg d-flex justify-content-center align-items-center">
-            <a href="pages/accueil.html" class="btn btn-danger btn-lg py-3">Appuyez ici pour connaitre la vérité !</a>
-        </div>
-    </main>
 
 </body>
 </html>

@@ -7,12 +7,13 @@
     font-family: 'Itim', cursive;
 }
 
+
 /* Body */
 /* ------------------------------------------------------------------------------------------------------------------------------------*/
 body {
     display: flex;
     flex-direction: column;
-    background: url(../images/pyramide.png) no-repeat;
+    background: url(../images/pyramide-dark.png) no-repeat;
     background-position: 50% 5%;
     background-size: cover;
     height: 100vh;
@@ -42,15 +43,4 @@ body {
 
 .h-c-grey:hover {
     color: rgb(78, 78, 78);
-}
-
-
-/* Main */
-/* ------------------------------------------------------------------------------------------------------------------------------------*/
-main {
-    flex: 1;
-}
-
-main .container-lg {
-    height: 100%;
 }
