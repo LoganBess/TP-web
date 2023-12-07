@@ -14,6 +14,9 @@
     section .text {
         font-size: 1.5rem !important;
     }
+    .p2 {
+        width: 14.25rem;
+    }
 }
 @media (max-width: 1199px) {
     section .text {
@@ -55,6 +58,7 @@
 /* ------------------------------------------------------------------------------------------------------------------------------------*/
 body {
     background-color: #669F8C;
+    overflow-y: scroll;
 }
 
 
@@ -100,7 +104,7 @@ main {
 
 .row2-c-top, .row2-c-bottom{
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .row2-c-top .box {
@@ -163,7 +167,7 @@ section .text {
 
 .row3 {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .row3 .box {
@@ -177,3 +181,73 @@ section .text {
 
 /* Footer */
 /* ------------------------------------------------------------------------------------------------------------------------------------*/
+body > footer {
+    margin-top: 2rem;
+    height: 14rem;
+    background-color: white;
+}
+
+.container-lg {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.p1, .p3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 31rem;
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+    align-items: center;
+    gap: 0.8rem;
+    width: 18.25rem;
+    height: fit-content;
+}
+
+.p1 h3, .p1 p {
+    text-align: end;
+    margin-right: 1rem;
+}
+
+.p3 h3, .p3 p {
+    margin-left: 1rem;
+}
+
+.p1 p, .p3 p {
+    font-size: 1.4rem;
+}
+
+.f-text {
+    position: relative;
+    justify-self: center;
+    font-size: 1.5rem;
+}
+
+.f-text::before {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    right: 11rem;
+    height: 1px;
+    width: 250%;
+    background-color: #C0C0C0;
+    border-radius: 1rem;
+}
+
+.f-text::after {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    left: 11rem;
+    height: 1px;
+    width: 225%;
+    background-color: #C0C0C0;
+    border-radius: 1rem;
+}

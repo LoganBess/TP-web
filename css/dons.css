@@ -7,7 +7,6 @@
     font-family: 'Itim', cursive;
 }
 
-
 /* Media */
 /* ------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 1399px) {
@@ -27,24 +26,17 @@
     section .text {
         font-size: 1.1rem !important;
     }
-    main {
+    main, footer {
         margin-top: 1rem !important;
-        gap: 1rem !important;
-    }
-    .row3{
-        gap: 1.5rem !important;
-    }
-    .row2 {
-        flex-direction: column;
-        gap: 1rem !important;
     }
 }
+
 
 
 /* Body */
 /* ------------------------------------------------------------------------------------------------------------------------------------*/
 body {
-    background-color: #132A13;
+    background-color: #669F8C;
     overflow-y: scroll;
 }
 
@@ -81,11 +73,6 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    gap: 2rem;
-}
-
-.row2 {
-    display: flex;
     gap: 2rem;
 }
 
