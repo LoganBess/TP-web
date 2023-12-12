@@ -17,10 +17,26 @@
     .p2 {
         width: 14.25rem;
     }
+    .f-text::after {
+        left: 12rem !important;
+        width: 22rem !important;
+    }
+    .f-text::before {
+        right: 12rem !important;
+        width: 22rem !important;
+    }
 }
 @media (max-width: 1199px) {
     section .text {
         font-size: 1.25rem !important;
+    }
+    .f-text::after {
+        left: 12rem !important;
+        width: 18rem !important;
+    }
+    .f-text::before {
+        right: 12rem !important;
+        width: 18rem !important;
     }
 }
 @media (max-width: 991px) {
@@ -32,7 +48,7 @@
         gap: 1rem !important;
     }
     .row2-c-top, .row2-c-bottom, .row3{
-        gap: 1.5rem !important;
+        gap: 1rem !important;
     }
     .box img {
         width: 100% !important;
@@ -43,13 +59,76 @@
     .row3 {
         flex-direction: column;
     }
-}
-@media (max-width: 600px) {
-    section h3, .card-header {
-        font-size: 1.2rem !important;
+    .f-text::after {
+        left: 9rem !important;
+        width: 16rem !important;
     }
-    section .text, .card-body {
+    .f-text::before {
+        right: 9rem !important;
+        width: 16rem !important;
+    }
+}
+@media (max-width: 760px) {
+    .f-text::after {
+        left: 8rem !important;
+        width: 15rem !important;
+    }
+    .f-text::before {
+        right: 8rem !important;
+        width: 15rem !important;
+    }
+    .card-header {
+        font-size: 1rem !important;
+    }
+    .card-body {
         font-size: 0.8rem !important;
+    }
+}
+@media (max-width: 660px) {
+    .f-text::after {
+        left: 8rem !important;
+        width: 9.75rem !important;
+    }
+    .f-text::before {
+        right: 8rem !important;
+        width: 9.75rem !important;
+    }
+    .card {
+        height: 8rem !important;
+    }
+}
+@media (max-width: 450px) {
+    .row2-c-top, .row2-c-bottom {
+        flex-direction: column;
+    }
+    .row2-c-top .box, .row2-c-bottom .box {
+        border-radius: 0.5rem !important;
+    }
+    .row2 {
+        gap: 1rem;
+    }
+    .f-text::after, .f-text::before {
+        top: 0.9rem !important;
+        width: 7rem !important;
+    }
+    .f-text::after {
+        left: 6rem !important;
+    }
+    .f-text::before {
+        right: 6rem !important;
+    }
+    .f-text, .p1 h3, .p3 h3 {
+        font-size: 1.2rem !important;
+        margin: 0 !important;
+    }
+    .p1 p, .p3 p {
+        margin: 0 !important;
+    }
+    .p2 {
+        width: 1.2rem !important;
+    }
+    body > footer {
+        height: 12rem !important;
     }
 }
 
@@ -64,6 +143,12 @@ body {
 
 /* Navbar */
 /* ------------------------------------------------------------------------------------------------------------------------------------*/
+nav {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
 .text-nav {
     font-size: 1.5rem;
     border-radius: 0.2rem;
@@ -85,6 +170,38 @@ body {
 
 .h-c-grey:hover {
     color: rgb(78, 78, 78);
+}
+
+nav .btn {
+    border-radius: 0;
+    border: none;
+}
+
+.list-group .btn:hover, .dropdown-item:hover {
+    background-color: rgb(233, 233, 233);
+    color: black !important;
+}
+
+.link.active {
+    background-color: rgb(233, 233, 233) !important;
+}
+
+.animat-logo {
+    animation: animate 1.5s ease;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(2.5rem);
+        opacity: 0;
+    }
+    35%
+    {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+    }
 }
 
 
@@ -236,7 +353,7 @@ body > footer {
     top: 1.15rem;
     right: 11rem;
     height: 1px;
-    width: 250%;
+    width: 28rem;
     background-color: #C0C0C0;
     border-radius: 1rem;
 }
@@ -247,7 +364,34 @@ body > footer {
     top: 1.15rem;
     left: 11rem;
     height: 1px;
-    width: 225%;
+    width: 28rem;
     background-color: #C0C0C0;
     border-radius: 1rem;
+}
+
+/* Modal */
+/* ------------------------------------------------------------------------------------------------------------------------------------*/
+.modal-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #E9D199;
+    flex: 1;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+.modal-box img {
+    width: 92%;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+section .text {
+    font-size: 1.8rem;
 }

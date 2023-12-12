@@ -19,9 +19,11 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="../css/accueil.css">
+    <link rel="stylesheet" href="../css/normalize.css">
 
     <!-- Utility -->
     <meta charset="UTF-8">
+    <link rel="manifest" href="../favicon/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
     <title>Véritum</title>
@@ -35,7 +37,7 @@
         <div class="container-lg justify-content-start ">
             <div class="dropdown h-c-grey">
                 <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../images/logo-green.png" alt="Logo" width="48" class="d-inline-block align-text-center">
+                    <img src="../images/logo-green.png" alt="Logo" width="48" class="d-inline-block align-text-center animat-logo">
                     <span class="h3 ms-2">Véritum</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -62,12 +64,42 @@
                         <a href="../pages/preuves.html" class="nav-link">Preuves</a>
                     </li>
                     <li class="nav-item text-nav mx-2 me-0">
-                        <a href="../pages/propos.html" class="nav-link">À propos</a>
+                        <a href="../pages/propos.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#reg-modal">À propos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <!-- Modal -->
+    <section class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Les créateurs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-box-container">
+                        <div class="modal-box">
+                            <img src="../images/Henri.png" alt="henri" width="150">
+                            <p class="text">Henri</p>
+                            <p>2390229@cstjean.qc.ca</p>
+                        </div>
+                        <div class="modal-box">
+                            <img src="../images/Logan.png" alt="henri" width="150">
+                            <p class="text">Logan</p>
+                            <p>2369601@cstjean.qc.ca</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="mt-3">Cégep Saint-Jean-Sur-Richelieu</p>
+                        <p>6 décembre 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

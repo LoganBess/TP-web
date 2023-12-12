@@ -18,10 +18,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     <!-- Css -->
-    <link rel="stylesheet" href="../css/dons.css">
-
+    <link rel="stylesheet" href="../css/astuce.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    
     <!-- Utility -->
     <meta charset="UTF-8">
+    <link rel="manifest" href="../favicon/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
     <title>Véritum</title>
@@ -35,12 +37,20 @@
         <div class="container-lg justify-content-start ">
             <div class="dropdown h-c-grey">
                 <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../images/logo-green.png" alt="Logo" width="48" class="d-inline-block align-text-center">
+                    <img src="../images/logo-green.png" alt="Logo" width="48" class="d-inline-block align-text-center animat-logo">
                     <span class="h3 ms-2">Véritum</span>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="../pages/qui-sommes-nous.html">Mode normal</a></li>
                     <li><a class="dropdown-item" href="../pages/accueil.html">Mode dark</a></li>
+
+                    <!-- ************ -->
+                    <li><hr class="dropdown-divider"></li>
+                    <div id="list-example" class="list-group">
+                        <a class="btn link text-dark text-start" href="#list-item-1">Quelques infos</a>
+                        <a class="btn link text-dark text-start" href="#list-item-2">Donnez à Véritum</a>
+                        <a class="btn link text-dark text-start" href="#list-item-3">Tableau des avantages</a>
+                    </div>
                 </ul>
             </div>
             
@@ -55,11 +65,11 @@
                     <li class="nav-item text-nav mx-2">
                         <a href="../pages/qui-sommes-nous.html" class="nav-link">Qui sommes nous ?</a>
                     </li>
-                    <li class="nav-item text-nav mx-2 nav-active">
-                        <a href="../pages/dons.html" class="nav-link">Dons</a>
+                    <li class="nav-item text-nav mx-2 me-0 nav-active">
+                        <a href="../pages/astuce.html" class="nav-link">Astuce</a>
                     </li>
                     <li class="nav-item text-nav mx-2 me-0">
-                        <a href="../pages/propos.html" class="nav-link">À propos</a>
+                        <a href="../pages/propos.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#reg-modal">À propos</a>
                     </li>
                 </ul>
             </div>
@@ -67,16 +77,51 @@
     </nav>
 
     <!-- Main -->
-    <main>
-        <section class="container-lg row1">
+    <main data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
+        <!-- row1 -->
+        <section class="container-lg row1" id="list-item-1">
+            <div class="p-3 pb-2 box">
+                <h3 class="text-center fw-bold">Contacter les génies</h3>
+                <p class="text">Pour contacter les deux créateurs de ce projet, il suffit de se rendre sur leur instagram respectif et de leur envoyer un message privé.</p>
+                <ul class="mt-auto">
+                    <a href="https://www.instagram.com/henri_blanchard/" class="tt" data-bs-placement="right" title="Ce lien dirige vers la page instagram de Cerveaulus">Page de Gigantus Cerveaulus (i)</a>
+                    <li class="text">2390229@cstjean.qc.ca</li>
+                </ul>
+                <ul>
+                    <a href="https://www.instagram.com/bessettelogan/" class="tt" data-bs-placement="right" title="Ce lien dirige vers la page instagram de Intelligentus">Page de Hommus Intelligentus (i)</a>
+                    <li class="text">2369601@cstjean.qc.ca</li>
+                </ul>
+            </div>
+            <div class="p-3 pb-2 box">
+                <h3 class="text-center fw-bold">Informations générales</h3>
+                <p class="text">Ce site est composé en deux parties distinctes qui représentent chacune une face de la réalité.</p>
+                <p class="text">Le coté lumineux comporte les informations à propos du site ainsi que sur les personnages qui ont créé ce site.</p>
+                <p class="text">Le coté sombre représente la face caché de la société. Dans cette partie, vous allez découvrir la vraie vérité sur le monde.</p>
+                <p class="text">Ce site regorge de vraies informations que nous vous fournissons, donc si vous voulez pas apprendre la vérité et rester dans l'ignorance, partez du site maintenant.</p>
+            </div>
+            <div class="p-3 pb-2 box">
+                <h3 class="text-center fw-bold">Astuces</h3>
+                <ul>
+                    <li class="text">Pour vous rendre au coté sombre, il vous suffit d’appuyer sur le logo Véritum, un menu va s'afficher.</li>
+                    <li class="text">Pour devenir une personne intelligente qui s’affirme dans la société, il suffit de faire un don.</li>
+                    <li class="text">Pour augmenter votre savoir, il suffit de lire en entier les informations sur ce site.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- row2 -->
+        <section class="container-lg row2" id="list-item-2">
             <div class="p-3 pb-2 box">
                 <h3 class="text-center fw-bold">Donnez à Véritum !</h3>
-                <p class="text">Notre projet est en pleine croissance, de ce fait nous avons besoins de plus de ressources. Comment contribuer à cela, cela est bien simple ! Nous acceptons le bitcoin et les virement Paypal à l'adresse suivante : paypal.me/Véritum.</p>
+                <p class="text">Notre projet est en pleine croissance, de ce fait nous avons besoin de plus de ressources. Comment contribuer à Véritum ? Cela est bien simple ! Nous acceptons le bitcoin et les virement Paypal à l'adresse suivante : paypal.me/Véritum.</p>
                 <p class="text">De plus, si vous n'avez pas d'argent, mais que vous voulez tout de même contribuer, vous pouvez venir faire du bénévolat en notre compagnie.</p>
             </div>
         </section>
-        <section class="container-lg">
-            <table class="table text text-center table-hover table-striped">
+
+        <!-- tableau -->
+        <section class="container-lg" id="list-item-3">
+            <table class="table text text-center table-hover table-striped table-bordered">
                 <thead>
                     <tr>
                         <th scope="col" class="text-center"><i class="fa-duotone fa-money-bill-1-wave"></i></th>
@@ -123,7 +168,7 @@
                         <td><i class="fa-solid fa-check"></i></td>
                     </tr>
                     <tr>
-                        <th scope="row">Accès au contenus avant tout le monde</th>
+                        <th scope="row">Accès au contenu avant tout le monde</th>
                         <td><i class="fa-solid fa-xmark"></i></td>
                         <td><i class="fa-solid fa-xmark"></i></td>
                         <td><i class="fa-solid fa-xmark"></i></td>
@@ -154,6 +199,42 @@
             </div>
         </section>
     </footer>
+
+    <!-- Modal -->
+    <section class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Les créateurs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-box-container">
+                        <div class="modal-box">
+                            <img src="../images/Henri.png" alt="henri" width="150">
+                            <p class="text">Henri</p>
+                            <p>2390229@cstjean.qc.ca</p>
+                        </div>
+                        <div class="modal-box">
+                            <img src="../images/Logan.png" alt="henri" width="150">
+                            <p class="text">Logan</p>
+                            <p>2369601@cstjean.qc.ca</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="mt-3">Cégep Saint-Jean-Sur-Richelieu</p>
+                        <p>6 décembre 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('.tt')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
 </body>
 </html>

@@ -19,9 +19,11 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="../css/histoire.css">
+    <link rel="stylesheet" href="../css/normalize.css">
 
     <!-- Utility -->
     <meta charset="UTF-8">
+    <link rel="manifest" href="../favicon/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
     <title>Véritum</title>
@@ -29,18 +31,26 @@
 
 
 <body>
-
+    
     <!-- Nav -->
     <nav class="navbar bg-body-tertiary navbar-expand-md">
         <div class="container-lg justify-content-start ">
             <div class="dropdown h-c-grey">
                 <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../images/logo-green.png" alt="Logo" width="48" class="d-inline-block align-text-center">
+                    <img src="../images/logo-green.png" alt="Logo" width="48" class="d-inline-block align-text-center animat-logo">
                     <span class="h3 ms-2">Véritum</span>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="../pages/qui-sommes-nous.html">Mode normal</a></li>
                     <li><a class="dropdown-item" href="../pages/accueil.html">Mode dark</a></li>
+                    
+                    <!-- ************ -->
+                    <li><hr class="dropdown-divider"></li>
+                    <div id="list-example" class="list-group">
+                        <a class="btn link text-dark text-start" href="#list-item-1">Les débuts</a>
+                        <a class="btn link text-dark text-start" href="#list-item-2">Par la suite</a>
+                        <a class="btn link text-dark text-start" href="#list-item-3">La grande découverte</a>
+                    </div>
                 </ul>
             </div>
             
@@ -62,7 +72,7 @@
                         <a href="../pages/preuves.html" class="nav-link">Preuves</a>
                     </li>
                     <li class="nav-item text-nav mx-2 me-0">
-                        <a href="../pages/propos.html" class="nav-link">À propos</a>
+                        <a href="../pages/propos.html" class="nav-link" data-bs-toggle="modal" data-bs-target="#reg-modal">À propos</a>
                     </li>
                 </ul>
             </div>
@@ -70,33 +80,33 @@
     </nav>
 
     <!-- Main -->
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
         <!-- row1 -->
-        <section class="container-lg row1">
+        <section class="container-lg row1" id="list-item-1">
             <div class="p-3 pb-2 box">
-                <h3 class="text-center fw-bold">Les débuts</h3>
-                <p class="text">Tous as commencé lors du voyage de Intelligentus en égypte. C’est en admirant les pyramides qu’il a réalisé que c’est impossible que ces monuments aient été construits par des humains, car cela n'était pas possible avec le peu de technologie présente à cette époque. Il a donc chercher un complice pour fouiller les vestiges des pyramides et il a vite rencontré d’autres épreuves.</p>
+                <h3 class="text-center fw-bold animation">Les débuts</h3>
+                <p class="text"> &rarr; Tout à commencé lors du voyage de Intelligentus en égypte. C’est en admirant les pyramides qu’il a réalisé que c’est impossible que ces monuments aient été construits par des humains, car cela n'était pas possible avec le peu de technologie présente à cette époque. Il a donc cherché un complice pour fouiller les vestiges des pyramides, heureusement il a vite rencontré d’autres épreuves par la suite.</p>
             </div>
         </section>
 
         <!-- row2 -->
-        <section class="container-lg row2">
+        <section class="container-lg row2" id="list-item-2">
             <div class="p-3 pb-2 box">
-                <p class="text">Après de nombreuses recherches fondées sur la matière, moi et mon collègue avions en tête que la création des pyramides fut une invention cachée du gouvernement depuis des siècles. Cette idée n'est pas venue de nulle part, car pourquoi créer des monuments gigantesques sans vraiment y cacher quelque chose ? C'est sûr et nous en sommes convaincus ! Le gouvernement cache quelque chose dans ses pyramides et nous allons vous révéler ce qui a l'intérieur !</p>
+                <p class="text"> &rarr; Après de nombreuses recherches fondées sur la matière, moi et mon collègue avions en tête que la création des pyramides fut une invention cachée du gouvernement depuis des siècles. Cette idée n'est pas venue de nulle part, car pourquoi créer des monuments gigantesques sans vraiment y cacher quelque chose ? C'est sûr et nous en sommes convaincus ! Le gouvernement cache quelque chose dans ses pyramides et nous allons vous révéler ce qui a l'intérieur !</p>
             </div>
             <div class="p-3 pb-2 box">
-                <p class="text">Déjà, pourquoi les recherches qui durent depuis déjà des décennies ne mènent qu'à des tombeaux souterrains vieux de milliers d'années ? Cela est bien simple, les chercheurs et scientifique sont payés pour ne révéler que la fausse vérité. Et de même, pourquoi pouvons-nous visiter qu'une infime partie des lieux ? Car le gouvernement nous cache la réalité. La réalité est la suivante : ne soyez pas choqué, mais le gouvernement cache des extraterrestres, ainsi que leurs équipements spatiaux, tous dissimulés derrière les murs des pyramides.</p>
+                <p class="text"> &rarr; Déjà, pourquoi les recherches qui durent depuis déjà des décennies ne mènent qu'à des tombeaux souterrains vieux de milliers d'années ? Cela est bien simple, les chercheurs et scientifique sont payés pour ne révéler que la fausse vérité. Et de même, pourquoi pouvons-nous visiter qu'une infime partie des lieux ? Car le gouvernement nous cache la réalité. La réalité est la suivante : ne soyez pas choqué, mais le gouvernement cache des extraterrestres, ainsi que leurs équipements spatiaux, tous dissimulés derrière les murs des pyramides.</p>
             </div>
             <div class="p-3 pb-2 box">
-                <p class="text">Bien sûr cela fait peur de s'imaginer vivre avec des êtres que nous connaissons à peine, mais je vous assure que leur présence présente une menace pour notre société, sinon pourquoi ils seraient cachés ? Moi et mon collègue, nous avons essayé d'interroger les principaux représentants des pyramides, mais après de nombreuses tentatives non concluantes, nous en sommes contraints d'abandonner cette tactique. Après nous les comprenons, pourquoi ils abandonneraient l'idée que des extraterrestres existeraient sur nos terres à des parfaits inconnus ?</p>
+                <p class="text"> &rarr; Bien sûr cela fait peur de s'imaginer vivre avec des êtres que nous connaissons à peine, mais je vous assure que leur présence présente une menace pour notre société, sinon pourquoi ils seraient cachés ? Moi et mon collègue, nous avons essayé d'interroger les principaux représentants des pyramides, mais après de nombreuses tentatives non concluantes, nous en sommes contraints d'abandonner cette tactique. Après nous les comprenons, pourquoi ils abandonneraient l'idée que des extraterrestres existeraient sur nos terres à des parfaits inconnus ?</p>
             </div>
         </section>
 
         <!-- row3 -->
-        <section class="container-lg row2">
+        <section class="container-lg row2" id="list-item-3">
             <div class="p-3 pb-2 box">
-                <p class="text">Nous savons très peu de choses sur les entités cachés dans les pyramides, par contre nous savons qu'ils existent, car nous les avons vu sortir, un soir orageux, pendant une mission d'espionnage. Bien sûr, le périmètre était interdit au public pour "des travaux de maintenance". Nous nous sommes rapprochés du grillage le plus près possible sans se faire repérer et nous avons découvert l'inévitable. Nous étions loin de la cible, mais suffisamment proche pour distinguer des silhouettes étranges. Pour en être sûr, nous avons déployé notre drone furtif afin de capturer en vidéo ces êtres spatiaux inconnus. Mais malheureusement, un garde à trouver le drone et l'a confisqué. Pour éviter tout ennuis avec les autorités, nous sommes partis avec l'idée bien distincte de révéler au monde entier ce que nous avons vu.</p>
+                <p class="text"> &rarr; Nous savons très peu de choses sur les entités cachés dans les pyramides, par contre nous savons qu'ils existent, car nous les avons vu sortir, un soir orageux, pendant une mission d'espionnage. Bien sûr, le périmètre était interdit au public pour "des travaux de maintenance". Nous nous sommes rapprochés du grillage le plus près possible sans se faire repérer et nous avons découvert l'inévitable. Nous étions loin de la cible, mais suffisamment proche pour distinguer des silhouettes étranges. Pour en être sûr, nous avons déployé notre drone furtif afin de capturer en vidéo ces êtres spatiaux inconnus. Mais malheureusement, un garde à trouver le drone et l'a confisqué. Pour éviter tout ennuis avec les autorités, nous sommes partis avec l'idée bien distincte de révéler au monde entier ce que nous avons vu. <i class="fa-solid fa-alien"></i></p>
             </div>
         </section>
     </main>
@@ -121,5 +131,36 @@
             </div>
         </section>
     </footer>
+    
+    <!-- Modal -->
+    <section class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Les créateurs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-box-container">
+                        <div class="modal-box">
+                            <img src="../images/Henri.png" alt="henri" width="150">
+                            <p class="text">Henri</p>
+                            <p>2390229@cstjean.qc.ca</p>
+                        </div>
+                        <div class="modal-box">
+                            <img src="../images/Logan.png" alt="henri" width="150">
+                            <p class="text">Logan</p>
+                            <p>2369601@cstjean.qc.ca</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <p class="mt-3">Cégep Saint-Jean-Sur-Richelieu</p>
+                        <p>6 décembre 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
